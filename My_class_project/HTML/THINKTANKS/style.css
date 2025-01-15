@@ -1,0 +1,146 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    background: #ffffff;
+    height: 100vh;
+    color: #000;
+}
+
+Genral 
+.container {
+    padding: 0 8.4rem;
+}
+header {
+    box-shadow: 0 4px 17px rgba(0, 0, 0, .1);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+ul{
+    display: flex;
+    gap: .6rem;
+    list-style-type: none;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+    left: 60vb;
+}
+li a {
+    display: inline-block;
+    padding: .3rem 1rem;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    border-radius: 36px;
+    line-height: 2;
+    transition: .3s;
+    opacity: 0;
+    animation: navani .3s ease forwards;
+    animation-delay: calc(.15s * var(--navAni));
+}
+li a.active,
+li a:hover {
+    color: #fc560a;
+}
+.menu {
+    display: none;
+}
+@keyframes navani {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rightSideAni {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes leftsideani {
+        0% {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+    
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+}
+.Earth-bhaisahab{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    right: 20vb;
+    transition: left o.3s linear;
+    background-image: url("https://svs.gsfc.nasa.gov/vis/a000000/a003600/a003615/earth_noClouds.0330.jpg");
+    background-size: cover;
+    position: relative;
+    left: 20vb;
+    bottom: -50px;
+    border-radius: 50%;
+    animation: earthRotate 30s linear 0s infinite;
+    box-shadow: 0px 0 20px RGBA(255,255,255,0.2),-5px 0px 8px #c3f4ff inset,15px 2px 25px #000 inset,-24px -2px 34px ;
+    
+}
+@keyframes earthRotate {
+    0%{
+        background-position: 0,0;
+    }
+    100%{background-position: 400px 0;
+    }  
+}
+.name{
+    position: relative;
+    left: 64vb;
+    bottom: 25vh;
+    font-family: 'Outfit', sans-serif ;
+    width: 40vb;
+    animation: rightSideAni 2s ease forwards;
+    text-shadow: -12px -2px 10px;
+}
+.tag{
+    position: relative;
+    left: 71vb;
+    bottom: 23vh;
+    font-family: 'Outfit', sans-serif ;
+    font-size:3vb;
+    width: 40vb;
+    animation: leftsideani 2s ease forwards  ;
+    text-shadow: -12px -2px 10px;
+}
+.benifit{
+    position: relative;
+    left: 78vb;
+    bottom: 20vh;
+    font-family: 'Outfit', sans-serif ;
+    font-size:4vb;
+    width: 70vb;
+    animation: navani 2s ease forwards;
+    text-shadow: -12px -2px 10px;
+}
+.earth{
+    animation: navani 4s ease forwards;
+}
+

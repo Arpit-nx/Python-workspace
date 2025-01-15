@@ -1,0 +1,11 @@
+#regioncites{
+    width: cover;
+    position: relative;
+    left: 50vb;
+    width: 110vb;
+}
+.city1{
+    background-image: url(https://res.klook.com/image/upload/fl_lossy.progressive,w_800,c_fill,q_85/Mobile/City/qjbwcdor8kha3dihpj20.jpg);
+    width: 20vb;
+    height: 30vb;
+}
